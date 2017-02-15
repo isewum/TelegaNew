@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-//using System.IO;
 using System.IO.Ports;
 using System.Threading;
 using ViconDataStreamSDK.DotNET;
@@ -14,7 +13,6 @@ namespace Telega_new_V2._1_Vicon_Tracking
         private Thread trackThread, driveThread;
         private double xActual, yActual, xTarget, yTarget;
         private double[] rotation = new double[4];
-        //private string rotationResult = "";
         private readonly string newLine = string.Format(Environment.NewLine + ">> ");
         private bool isStopped, isRotationComplete;
 
